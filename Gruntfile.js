@@ -21,6 +21,9 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  // For grunt-build-controll
+  var pkg = require('./package.json');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -404,7 +407,40 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    // for grunt-build-control
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+
+      pages: {
+        options: {
+          remote: 'git@github.com:AlanJui/myAngular.git',
+          branch: 'gh-pages'
+        }
+      },
+
+      heroku: {
+        options: {
+          remote: 'https://git.heroku.com/my-yo-angular.git',
+          branch: 'master',
+          tag: pkg.version
+        }
+      },
+
+      local: {
+        options: {
+          remote: '../',
+          branch: build
+        }
+      }
     }
+
   });
 
 
@@ -451,7 +487,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'buildcontrol:pages'
   ]);
 
   grunt.registerTask('default', [
