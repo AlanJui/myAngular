@@ -24,6 +24,8 @@ module.exports = function (grunt) {
   // For grunt-build-controll
   var pkg = require('./package.json');
 
+  // grunt.loadNpmTasks('grunt-build-control');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -373,6 +375,11 @@ module.exports = function (grunt) {
           src: ['generated/*']
         }, {
           expand: true,
+          cwd: 'bower_components/font-awesome',
+          src: 'fonts/*',
+          dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
@@ -409,7 +416,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // for grunt-build-control
     buildcontrol: {
       options: {
         dir: 'dist',
@@ -417,30 +423,26 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-
       pages: {
         options: {
           remote: 'git@github.com:AlanJui/myAngular.git',
           branch: 'gh-pages'
         }
       },
-
       heroku: {
         options: {
-          remote: 'https://git.heroku.com/my-yo-angular.git',
+          remote: 'git@heroku.com:my-yo-angular.git',
           branch: 'master',
           tag: pkg.version
         }
       },
-
       local: {
         options: {
           remote: '../',
-          branch: build
+          branch: 'build'
         }
       }
     }
-
   });
 
 
@@ -487,8 +489,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin',
-    'buildcontrol:pages'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
