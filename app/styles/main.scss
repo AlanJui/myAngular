@@ -34,11 +34,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import 'layouts/_mobile.scss';
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    min-width: max-size;
-  }
-}
 // @media screen and (min-width: 768px) {
 //   .container {
 //     max-width: 730px;
