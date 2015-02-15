@@ -369,6 +369,16 @@ module.exports = function (grunt) {
             'styles/fonts/{,*/}*.*'
           ]
         }, {
+          // for Node Web Server
+          expand: true,
+          cwd: '.',
+          dest: '<%= yeoman.dist %>',
+          src: [
+            'package.json',
+            'web-server.js',
+            'Procfile'
+          ]
+        }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
