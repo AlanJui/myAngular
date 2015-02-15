@@ -441,7 +441,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
-          remote: 'git@heroku.com:protected-caverns-7711.git',
+          remote: 'git@heroku.com:my-yo-angular.git',
           branch: 'master',
           tag: pkg.version
         }
