@@ -1,1 +1,191 @@
-<p>This is the about view.</p>
+<div ng-controller="AboutCtrl">
+  <!-- Search on Website and Products -->
+  <search-website-and-products></search-website-and-products>
+
+  <!-- Web Page Header -->
+  <section class="section-primary-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Building technology to shape our future</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contents -->
+  <section class="section-main">
+    <div class="container">
+      <div class="row">
+        <!-- Left side -->
+        <div class="col-md-8">
+          <!-- Carousel -->
+          <div id="carousel-about" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-about" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-about" data-slide-to="1"></li>
+              <li data-target="#carousel-about" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active"><img src="images/slide1.jpg" alt="...">
+              </div>
+              <div class="item"><img src="images/slide2.jpg" alt="...">
+              </div>
+              <div class="item"><img src="images/slide3.jpg" alt="...">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a href="#carousel-about" class="left carousel-control" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#carousel-about" class="right carousel-control" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+
+          <!-- Contents -->
+          <div>
+            <h2 class="page-header heading-primary-a">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ducimus eum repudiandae quidem tenetur voluptas, consectetur quo a id. Omnis numquam animi sit nihil iure necessitatibus ipsa atque unde. Inventore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error possimus, tempora dolorum, similique maxime assumenda facilis cum voluptatum quidem, aut dignissimos obcaecati dolor voluptas. Dolore inventore, provident repellat ducimus quo.</p>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="col-md-4">
+          <!-- List -->
+          <div>
+            <h2 class="page-header">Lorem Ipsum</h2>
+            <ul class="list-feature">
+              <li><i class="fa fa-check fa-6 fa-primary"></i><span>Lorem ipsum dolor</span>
+              </li>
+              <li><i class="fa fa-check fa-6 fa-primary"></i><span>Lorem ipsum dolor</span>
+              </li>
+              <li><i class="fa fa-check fa-6 fa-primary"></i><span>Lorem ipsum dolor</span>
+              </li>
+              <li><i class="fa fa-check fa-6 fa-primary"></i><span>Lorem ipsum dolor</span>
+              </li>
+            </ul>
+
+            <!-- Panel Group -->
+            <div id="accordion" class="panel-group">
+              <!-- Panel for Who We Are -->
+              <div class="panel panel-default">
+                <!-- Panel Heading -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">
+                      <span class="em-primary">Who</span> We Are
+                    </a>
+                  </h4>
+                </div>
+                <!-- Panel Contents -->
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, libero dolor magni iusto similique nobis laboriosam, unde velit debitis, commodi suscipit. Facilis iusto id, error in, voluptatibus eum eius ullam.
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel for Who We Are -->
+
+              <!-- Panel for What We Do -->
+              <div class="panel panel-default">
+                <!-- Panel Heading -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">
+                      <span class="em-primary">What</span> We Do
+                    </a>
+                  </h4>
+                </div>
+                <!-- Panel Contents -->
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, libero dolor magni iusto similique nobis laboriosam, unde velit debitis, commodi suscipit. Facilis iusto id, error in, voluptatibus eum eius ullam.
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel for What We Do -->
+
+              <!-- Panel for Why Choose Us -->
+              <div class="panel panel-default">
+                <!-- Panel Heading -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">
+                      <span class="em-primary">Why</span> Choose Us?
+                    </a>
+                  </h4>
+                </div>
+                <!-- Panel Contents -->
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, libero dolor magni iusto similique nobis laboriosam, unde velit debitis, commodi suscipit. Facilis iusto id, error in, voluptatibus eum eius ullam.
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel for Why Choose Us -->
+            </div>
+            <!-- End Panel Group -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Team -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <h2 class="page-header heading-secondary-a">Meet Our Team</h2>
+
+        <div class="col-md-3">
+          <div class="block block-image block-border block-center block-light">
+            <img src="images/headshot1.jpg" alt="Jane Doe">
+            <h3>Jane Doe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam reprehenderit voluptatem atque dolorum impedit, hic labore quisquam. Accusantium, aliquam!</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block block-image block-border block-center">
+            <img src="images/headshot2.jpg" alt="Dorris Yang">
+            <h3>Dorris Yang</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia officiis perspiciatis obcaecati ducimus molestiae facilis, voluptate hic cumque, nesciunt necessitatibus.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block block-image block-border block-center block-light">
+            <img src="images/headshot3.jpg" alt="Albert Chung">
+            <h3>Albert Chung</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora vero libero voluptatum corrupti odit et in, cumque placeat, illo repellat quaerat.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="block block-image block-border block-center">
+            <img src="images/headshot4.jpg" alt="Allen Hsu">
+            <h3>Allen Hsu</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nesciunt fugiat esse distinctio iusto pariatur reprehenderit veniam reiciendis officia iste.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="section-primary-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="blockquote-reverse">
+            <h1>"I do not believe you can do today's job with yesterday's methods and be in business tomorrow"</h1>
+            <em>Nelson Jackson</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

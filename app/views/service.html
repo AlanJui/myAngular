@@ -1,0 +1,258 @@
+<div ng-controller="ServiceCtrl">
+  <!-- Search on Website and Products -->
+  <!-- <section class="section-light top-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form class="search">
+            <input type="search" placeholder="Search Our Website & Products">
+            <button tpe="submit" value="">
+              <img src="../images/search.png" alt="Search">
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+  </section> -->
+  <search-website-and-products></search-website-and-products>
+
+  <!-- Slogan -->
+  <section class="section-primary-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Building technology to shape our future</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contents -->
+  <section class="section-main">
+    <div class="container">
+      <div class="row">
+
+        <!-- Left Side -->
+        <div class="col-md-8">
+          <!-- Services -->
+          <div>
+            <h2 class="page-header heading-primary-a">Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae distinctio minima ipsum, ipsam quas ab nostrum quo, quis non iste amet facilis accusantium dolorem aspernatur, deserunt sapiente dolores possimus neque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam rerum similique, quam, quos qui distinctio vitae repellendus quo odit sequi inventore, fugit provident delectus tempore architecto ipsam facilis quidem itaque!</p>
+          </div>
+
+          <br>
+
+          <!-- Service and Support Panels -->
+          <div id="accordion" class="panel-group">
+
+            <!-- Service Panel 1 -->
+            <div class="panel panel-default">
+              <!-- Panel Heading -->
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#service1" data-toggle="collapse" data-parent="#accordion">
+                    Service One
+                  </a>
+                </h4>
+              </div>
+              <!-- End Panel Heading -->
+
+              <!-- Panel Body -->
+              <div id="service1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore quisquam veritatis, error repellendus fugit, nemo porro suscipit omnis saepe consequatur unde delectus! Incidunt, dolorem est odio hic consectetur, praesentium.
+                </div>
+              </div>
+              <!-- End Panel Body -->
+            </div>
+            <!-- End Service Panel -->
+
+            <!-- Service Panel 2 -->
+            <div class="panel panel-default">
+              <!-- Panel Heading -->
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#service2" data-toggle="collapse" data-parent="#accordion">
+                      Service Two
+                    </a>
+                  </h4>
+              </div>
+              <!-- End Panel Heading -->
+
+              <!-- Panel Body -->
+              <div id="service2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore quisquam veritatis, error repellendus fugit, nemo porro suscipit omnis saepe consequatur unde delectus! Incidunt, dolorem est odio hic consectetur, praesentium.
+                </div>
+              </div>
+              <!-- End Panel Body -->
+            </div>
+            <!-- End Service Panel -->
+
+            <!-- Service Panel 3 -->
+            <div class="panel panel-default">
+              <!-- Panel Heading -->
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#service3" data-toggle="collapse" data-parent="#accordion">
+                      Service Three
+                    </a>
+                  </h4>
+              </div>
+              <!-- End Panel Heading -->
+
+              <!-- Panel Body -->
+              <div id="service3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam labore quisquam veritatis, error repellendus fugit, nemo porro suscipit omnis saepe consequatur unde delectus! Incidunt, dolorem est odio hic consectetur, praesentium.
+                </div>
+              </div>
+              <!-- End Panel Body -->
+            </div>
+            <!-- End Service Panel -->
+          </div>
+        </div>
+        <!-- End Left Side -->
+
+        <!-- Right Side -->
+        <div class="col-md-4">
+          <!-- Tab Group -->
+          <div class="tab tab-primary">
+            <!-- Tabs Head -->
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
+              <li class="active"><a href="#services" role="tab" data-toggle="tab">Services</a>
+              </li>
+              <li><a href="#about" role="tab" data-toggle="tab">About</a>
+              </li>
+              <li><a href="#support" role="tab" data-toggle="tab">Support</a>
+              </li>
+            </ul>
+            <!-- Tabs Body -->
+            <div id="myTabContent" class="tab-content">
+              <!-- Tab #services -->
+              <div id="services" class="tab-pane fade in active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quo asperiores animi, dicta, expedita suscipit cupiditate laboriosam harum velit. Quis dolores explicabo qui suscipit iure, expedita repellendus architecto! Dicta, sed.</p>
+              </div>
+              <!-- Tab #About -->
+              <div id="about" class="tab-pane fade">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime, odit vero rerum molestiae animi architecto ex voluptas quia dolorem cumque ullam esse harum alias fugiat? Eos nesciunt veritatis eius.</p>
+              </div>
+              <!-- Tab #Support -->
+              <div id="support" class="tab-pane fade">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nihil similique ullam accusamus, dolorem incidunt iste cumque, obcaecati recusandae eligendi alias, reprehenderit suscipit ab a aperiam aut pariatur porro. Alias.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Quote -->
+          <div class="block block-primary-head">
+            <h3><i class="fa fa-pencil"></i> Quick Quote</h3>
+            <div class="block-content">
+              <form role="form">
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input type="text" class="form-control" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                  <label for="">Phone Number</label>
+                  <input type="text" class="form-control" placeholder="Enter phone">
+                </div>
+                <div class="form-group">
+                  <label for="">Email Address</label>
+                  <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="">Message</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End Right Side -->
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="section-primary">
+    <div class="container">
+      <h2 class="page-header">What We Do</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="block block-icon">
+            <div class="icon">
+              <i class="fa fa-home fa-6"></i>
+            </div>
+            <div class="icon-content">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block block-icon">
+            <div class="icon">
+              <i class="fa fa-home fa-6"></i>
+            </div>
+            <div class="icon-content">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block block-icon">
+            <div class="icon">
+              <i class="fa fa-home fa-6"></i>
+            </div>
+            <div class="icon-content">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="block block-icon">
+            <div class="icon">
+              <i class="fa fa-home fa-6"></i>
+            </div>
+            <div class="icon-content">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block block-icon">
+            <div class="icon">
+              <i class="fa fa-home fa-6"></i>
+            </div>
+            <div class="icon-content">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block block-icon">
+            <div class="icon">
+              <i class="fa fa-home fa-6"></i>
+            </div>
+            <div class="icon-content">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
