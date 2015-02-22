@@ -13,12 +13,13 @@ angular.module('myAngularApp')
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
         //element.text('this is the companyProfile directive');
-        scope.oneAtATime = true;
+        // scope.oneAtATime = true;
 
-        scope.status = {
-          isFirstOpen: true,
-          isFirstDisabled: false
-        }
+        // scope.status = {
+        //   open: true,
+        //   isFirstOpen: true,
+        //   isFirstDisabled: false
+        // }
       }
     };
   });

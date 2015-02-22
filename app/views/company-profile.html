@@ -1,17 +1,37 @@
 <!-- Panel Group -->
-<accordion close-others="oneAtATime">
-  <accordion-group is-open="true">
-    <accordion-heading><span class="em-primary">Who</span> We Are</accordion-heading>
+<accordion close-others="setting.oneAtATime">
+  <accordion-group ng-repeat="group in groups" is-open="group.isOpened">
+    <accordion-heading>
+      {{ group.title }}
+      <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': group.isOpened, 'glyphicon-chevron-right': !group.isOpened}"></i>
+    </accordion-heading>
+    {{ group.content }}
+  </accordion-group>
+</accordion>
+
+
+<!-- <accordion close-others="setting.oneAtATime">
+  <accordion-group is-open="setting.isFirstOpen">
+    <accordion-heading ng-click="changeOpenStatus()">
+      <span class="em-primary">Who</span> We Are
+      <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': setting.isOpened, 'glyphicon-chevron-right': !setting.isOpened}"></i>
+    </accordion-heading>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eveniet, ex, exercitationem explicabo fugit id illum inventore ipsa ipsam iure magni omnis, perferendis perspiciatis quidem saepe sequi soluta voluptatibus? Quam?
   </accordion-group>
 
   <accordion-group>
-    <accordion-heading><span class="em-primary">What</span> We Do</accordion-heading>
+    <accordion-heading>
+      <span class="em-primary">What</span> We Do
+      <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': setting.isOpened, 'glyphicon-chevron-right': !setting.isOpened}"></i>
+    </accordion-heading>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt excepturi laudantium nemo nisi odit rerum similique sunt, temporibus. Autem exercitationem mollitia, nobis placeat rem velit! Alias doloremque id iusto maiores.
   </accordion-group>
 
   <accordion-group>
-    <accordion-heading><span class="em-primary">Why</span> Choose Us?</accordion-heading>
+    <accordion-heading>
+      <span class="em-primary">Why</span> Choose Us?
+      <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': setting.isOpened, 'glyphicon-chevron-right': !setting.isOpened}"></i>
+    </accordion-heading>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam blanditiis, consectetur deleniti eligendi et facilis iusto libero nam natus placeat porro tenetur! Itaque nulla perferendis quasi suscipit temporibus? Illum?
   </accordion-group>
-</accordion>
+</accordion> -->
