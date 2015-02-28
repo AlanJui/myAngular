@@ -18,15 +18,15 @@ angular.module('myAngularApp')
 
         var mySlides = [
           {
-            image: '/images/slide1.jpg',
+            image: 'images/slide1.jpg',
             text: 'Professional'
           },
           {
-            image: '/images/slide2.jpg',
+            image: 'images/slide2.jpg',
             text: 'Working Together with Customer'
           },
           {
-            image: '/images/slide3.jpg',
+            image: 'images/slide3.jpg',
             text: 'Total Solutions'
           }
         ];
