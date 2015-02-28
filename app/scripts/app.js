@@ -10,7 +10,7 @@
  */
 angular
   .module('myAngularApp', [
-    'ngAnimate',
+    //'ngAnimate',
     'ngAria',
     'ngCookies',
     'ngMessages',
@@ -43,6 +43,6 @@ angular
         controller: 'ContactCtrl'
       })
       .otherwise({
-        //redirectTo: '/'
+        redirectTo: '/'
       });
   });

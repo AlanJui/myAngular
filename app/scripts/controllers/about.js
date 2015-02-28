@@ -10,26 +10,42 @@
 angular.module('myAngularApp')
   .controller('AboutCtrl', function ($scope) {
 
-    $scope.groups = [
-    	{
-    		title: 'Who We Are',
-    		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eveniet, ex, exercitationem explicabo fugit id illum inventore ipsa ipsam iure magni omnis, perferendis perspiciatis quidem saepe sequi soluta voluptatibus? Quam?',
-    		isOpened: true
-    	},
-    	{
-    		title: 'What We Do',
-    		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt excepturi laudantium nemo nisi odit rerum similique sunt, temporibus. Autem exercitationem mollitia, nobis placeat rem velit! Alias doloremque id iusto maiores.',
-    		isOpened: false
-    	},
-    	{
-    		title: 'Why Choose Us?',
-    		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam blanditiis, consectetur deleniti eligendi et facilis iusto libero nam natus placeat porro tenetur! Itaque nulla perferendis quasi suscipit temporibus? Illum?',
-    		isOpened: false
-    	}
-    ];
+    //$scope.myInterval = 5000;
+    //$scope.slides = [
+    //  {
+    //    image: 'images/slide1.jpg',
+    //    text: 'Professional'
+    //  },
+    //  {
+    //    image: 'images/slide2.jpg',
+    //    text: 'Working Together with Customer'
+    //  },
+    //  {
+    //    image: 'images/slide3.jpg',
+    //    text: 'Total Solutions'
+    //  }
+    //];
 
-    $scope.setting = {
-    	oneAtATime:  true
-    };
+    //$scope.groups = [
+    //	{
+    //		title: 'Who We Are',
+    //		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eveniet, ex, exercitationem explicabo fugit id illum inventore ipsa ipsam iure magni omnis, perferendis perspiciatis quidem saepe sequi soluta voluptatibus? Quam?',
+    //		isOpened: true
+    //	},
+    //	{
+    //		title: 'What We Do',
+    //		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt excepturi laudantium nemo nisi odit rerum similique sunt, temporibus. Autem exercitationem mollitia, nobis placeat rem velit! Alias doloremque id iusto maiores.',
+    //		isOpened: false
+    //	},
+    //	{
+    //		title: 'Why Choose Us?',
+    //		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam blanditiis, consectetur deleniti eligendi et facilis iusto libero nam natus placeat porro tenetur! Itaque nulla perferendis quasi suscipit temporibus? Illum?',
+    //		isOpened: false
+    //	}
+    //];
+    //
+    //$scope.setting = {
+    //	oneAtATime:  true
+    //};
 
   });
