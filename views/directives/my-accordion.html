@@ -1,0 +1,1 @@
+<accordion close-others="setting.oneAtATime"> <accordion-group ng-repeat="group in setting.groups" is-open="group.isOpened"> <accordion-heading> {{ group.title }} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': group.isOpened, 'glyphicon-chevron-right': !group.isOpened}"></i> </accordion-heading> {{ group.content }} </accordion-group> </accordion>
